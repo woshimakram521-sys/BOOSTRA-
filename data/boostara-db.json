@@ -1,0 +1,805 @@
+{
+  "admins": [
+    {
+      "id": "admin_primary_01",
+      "email": "mdmohammad.644633815@gmail.com",
+      "role": "admin",
+      "passwordHash": "2ea73a5fda8c48ea7f04316db093ba842ed6406058ef6ade07ed8e1919311437bf1886c3b9d6a7a28c223ffd54362cea8015cc41151402b4466b516dde2ee893",
+      "salt": "acf463a5ee7d5f5ec1683f26d7eec5dd",
+      "createdAt": "2026-09-25T20:00:41.282Z"
+    }
+  ],
+  "smmServices": [
+    {
+      "id": "smm_1",
+      "platform": "Facebook",
+      "serviceType": "Likes",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_1",
+          "serviceId": "smm_1",
+          "tierName": "Drop",
+          "ratePer1000": 50,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_2",
+          "serviceId": "smm_1",
+          "tierName": "Non-Drop",
+          "ratePer1000": 80,
+          "guaranteePeriod": "৩০ দিন রিফিল গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_2",
+      "platform": "Facebook",
+      "serviceType": "Comments",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_3",
+          "serviceId": "smm_2",
+          "tierName": "Drop",
+          "ratePer1000": 130,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_4",
+          "serviceId": "smm_2",
+          "tierName": "Non-Drop",
+          "ratePer1000": 220,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_3",
+      "platform": "Facebook",
+      "serviceType": "Reactions",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_5",
+          "serviceId": "smm_3",
+          "tierName": "Drop",
+          "ratePer1000": 50,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_6",
+          "serviceId": "smm_3",
+          "tierName": "Non-Drop",
+          "ratePer1000": 80,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_4",
+      "platform": "Facebook",
+      "serviceType": "Followers",
+      "minQuantity": 500,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_7",
+          "serviceId": "smm_4",
+          "tierName": "Drop",
+          "ratePer1000": 40,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_8",
+          "serviceId": "smm_4",
+          "tierName": "Non-Drop",
+          "ratePer1000": 190,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Popular"
+    },
+    {
+      "id": "smm_5",
+      "platform": "Facebook",
+      "serviceType": "Views",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_9",
+          "serviceId": "smm_5",
+          "tierName": "Drop",
+          "ratePer1000": 20,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_6",
+      "platform": "Instagram",
+      "serviceType": "Likes",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_10",
+          "serviceId": "smm_6",
+          "tierName": "Drop",
+          "ratePer1000": 20,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_11",
+          "serviceId": "smm_6",
+          "tierName": "Non-Drop",
+          "ratePer1000": 59,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_7",
+      "platform": "Instagram",
+      "serviceType": "Comments",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_12",
+          "serviceId": "smm_7",
+          "tierName": "Drop",
+          "ratePer1000": 75,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_13",
+          "serviceId": "smm_7",
+          "tierName": "Non-Drop",
+          "ratePer1000": 110,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_8",
+      "platform": "Instagram",
+      "serviceType": "Followers",
+      "minQuantity": 500,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_14",
+          "serviceId": "smm_8",
+          "tierName": "Drop",
+          "ratePer1000": 130,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_15",
+          "serviceId": "smm_8",
+          "tierName": "Non-Drop",
+          "ratePer1000": 200,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Featured"
+    },
+    {
+      "id": "smm_9",
+      "platform": "Instagram",
+      "serviceType": "Views",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_16",
+          "serviceId": "smm_9",
+          "tierName": "Drop",
+          "ratePer1000": 20,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_17",
+          "serviceId": "smm_9",
+          "tierName": "Non-Drop",
+          "ratePer1000": 50,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_10",
+      "platform": "TikTok",
+      "serviceType": "Likes",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_18",
+          "serviceId": "smm_10",
+          "tierName": "Drop",
+          "ratePer1000": 50,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_19",
+          "serviceId": "smm_10",
+          "tierName": "Non-Drop",
+          "ratePer1000": 70,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_11",
+      "platform": "TikTok",
+      "serviceType": "Comments",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_20",
+          "serviceId": "smm_11",
+          "tierName": "Drop",
+          "ratePer1000": 700,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_21",
+          "serviceId": "smm_11",
+          "tierName": "Non-Drop",
+          "ratePer1000": 770,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_12",
+      "platform": "TikTok",
+      "serviceType": "Followers",
+      "minQuantity": 500,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_22",
+          "serviceId": "smm_12",
+          "tierName": "Drop",
+          "ratePer1000": 140,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_23",
+          "serviceId": "smm_12",
+          "tierName": "Non-Drop",
+          "ratePer1000": 290,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_13",
+      "platform": "TikTok",
+      "serviceType": "Views",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_24",
+          "serviceId": "smm_13",
+          "tierName": "Drop",
+          "ratePer1000": 20,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_25",
+          "serviceId": "smm_13",
+          "tierName": "Non-Drop",
+          "ratePer1000": 50,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_14",
+      "platform": "YouTube",
+      "serviceType": "Likes",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_26",
+          "serviceId": "smm_14",
+          "tierName": "Drop",
+          "ratePer1000": 120,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_27",
+          "serviceId": "smm_14",
+          "tierName": "Non-Drop",
+          "ratePer1000": 190,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_15",
+      "platform": "YouTube",
+      "serviceType": "Comments",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_28",
+          "serviceId": "smm_15",
+          "tierName": "Drop",
+          "ratePer1000": 150,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_29",
+          "serviceId": "smm_15",
+          "tierName": "Non-Drop",
+          "ratePer1000": 250,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_16",
+      "platform": "YouTube",
+      "serviceType": "Subscribers",
+      "minQuantity": 500,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_30",
+          "serviceId": "smm_16",
+          "tierName": "Drop",
+          "ratePer1000": 2450,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_31",
+          "serviceId": "smm_16",
+          "tierName": "Non-Drop",
+          "ratePer1000": 3500,
+          "guaranteePeriod": "লাইফটাইম গ্যারান্টি",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    },
+    {
+      "id": "smm_17",
+      "platform": "YouTube",
+      "serviceType": "Views",
+      "minQuantity": 100,
+      "maxQuantity": 100000,
+      "minOrderPrice": 20,
+      "active": true,
+      "tiers": [
+        {
+          "id": "tier_32",
+          "serviceId": "smm_17",
+          "tierName": "Drop",
+          "ratePer1000": 90,
+          "guaranteePeriod": "গ্যারান্টি নেই",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        },
+        {
+          "id": "tier_33",
+          "serviceId": "smm_17",
+          "tierName": "Non-Drop",
+          "ratePer1000": 170,
+          "guaranteePeriod": "৩০ দিন রিফিল",
+          "active": true,
+          "createdAt": "2026-09-25T20:00:41.283Z"
+        }
+      ],
+      "createdAt": "2026-09-25T20:00:41.283Z",
+      "badge": "Normal"
+    }
+  ],
+  "orders": [
+    {
+      "type": "SMM",
+      "customerWhatsapp": "01712345678",
+      "customerEmail": "customer.test@gmail.com",
+      "orderStatus": "Pending",
+      "paymentStatus": "Pending",
+      "totalAmount": 160,
+      "smmDetails": {
+        "platform": "Facebook",
+        "serviceType": "Likes",
+        "tierName": "Non-Drop",
+        "ratePer1000": 80,
+        "quantity": 2000,
+        "targetLink": "https://facebook.com/boostara.official/posts/1029384756",
+        "smmServiceFee": 0,
+        "reactionType": "Like"
+      },
+      "id": "ord_1790694205128_fjakl",
+      "orderId": "BST-20260929-7456",
+      "createdAt": "2026-09-29T15:03:25.127Z",
+      "updatedAt": "2026-09-29T15:03:45.314Z",
+      "payment": {
+        "orderId": "BST-20260929-7456",
+        "paymentMethod": "bKash",
+        "senderNumber": "01712345678",
+        "transactionId": "TRX9876543210",
+        "paidAmount": 160,
+        "paymentStatus": "Pending",
+        "id": "pay_1790694225314_jdmf7",
+        "submittedAt": "2026-09-29T15:03:45.314Z"
+      }
+    },
+    {
+      "type": "SMM",
+      "customerWhatsapp": "018558655568",
+      "orderStatus": "Pending",
+      "paymentStatus": "Pending",
+      "orderNote": "",
+      "totalAmount": 50,
+      "smmDetails": {
+        "platform": "Facebook",
+        "serviceType": "Likes",
+        "tierName": "Drop",
+        "ratePer1000": 50,
+        "quantity": 1000,
+        "targetLink": "https://aistudio.google.com/apps/a9bb8120-a5bd-4136-9eb0-ae0409e4910e?project=gen-lang-client-0820398334&showAssistant=true&showPreview=true",
+        "smmServiceFee": 0
+      },
+      "id": "ord_1790693125471_g3k80",
+      "orderId": "BST-20260929-7075",
+      "createdAt": "2026-09-29T14:45:25.471Z",
+      "updatedAt": "2026-09-29T14:45:46.230Z",
+      "payment": {
+        "orderId": "BST-20260929-7075",
+        "paymentMethod": "bKash",
+        "senderNumber": "01648588556",
+        "transactionId": "CYDXDSXASDD",
+        "paidAmount": 50,
+        "paymentStatus": "Pending",
+        "id": "pay_1790693146230_cjvkt",
+        "submittedAt": "2026-09-29T14:45:46.230Z"
+      }
+    },
+    {
+      "type": "SMM",
+      "customerWhatsapp": "01813078583",
+      "orderStatus": "Completed",
+      "paymentStatus": "Verified",
+      "orderNote": "",
+      "totalAmount": 80,
+      "smmDetails": {
+        "platform": "Facebook",
+        "serviceType": "Likes",
+        "tierName": "Non-Drop",
+        "ratePer1000": 80,
+        "quantity": 1000,
+        "targetLink": "https://facebook.com/post/12345",
+        "smmServiceFee": 0
+      },
+      "id": "ord_1790366463531_ew52y",
+      "orderId": "BST-20260925-7581",
+      "createdAt": "2026-09-25T20:01:03.531Z",
+      "updatedAt": "2026-09-25T20:01:20.297Z",
+      "payment": {
+        "orderId": "BST-20260925-7581",
+        "paymentMethod": "bKash",
+        "senderNumber": "01711223344",
+        "transactionId": "BK8X7990",
+        "paidAmount": 80,
+        "paymentStatus": "Verified",
+        "id": "pay_1790366468403_owwoi",
+        "submittedAt": "2026-09-25T20:01:08.403Z"
+      }
+    }
+  ],
+  "payments": [
+    {
+      "orderId": "BST-20260925-7581",
+      "paymentMethod": "bKash",
+      "senderNumber": "01711223344",
+      "transactionId": "BK8X7990",
+      "paidAmount": 80,
+      "paymentStatus": "Verified",
+      "id": "pay_1790366468403_owwoi",
+      "submittedAt": "2026-09-25T20:01:08.403Z"
+    },
+    {
+      "orderId": "BST-20260929-7075",
+      "paymentMethod": "bKash",
+      "senderNumber": "01648588556",
+      "transactionId": "CYDXDSXASDD",
+      "paidAmount": 50,
+      "paymentStatus": "Pending",
+      "id": "pay_1790693146230_cjvkt",
+      "submittedAt": "2026-09-29T14:45:46.230Z"
+    },
+    {
+      "orderId": "BST-20260929-7456",
+      "paymentMethod": "bKash",
+      "senderNumber": "01712345678",
+      "transactionId": "TRX9876543210",
+      "paidAmount": 160,
+      "paymentStatus": "Pending",
+      "id": "pay_1790694225314_jdmf7",
+      "submittedAt": "2026-09-29T15:03:45.314Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_1",
+      "customerName": "তানভীর আহমেদ",
+      "reviewText": "অর্ডার দেওয়ার ১ ঘণ্টার মধ্যেই ফেসবুক ফলোয়ার আসা শুরু হয়েছে। খুব দ্রুত এবং নির্ভরযোগ্য সার্ভিস!",
+      "rating": 5,
+      "visible": true,
+      "createdAt": "2026-09-23T20:00:41.283Z"
+    },
+    {
+      "id": "rev_2",
+      "customerName": "সামিরা ইসলাম",
+      "reviewText": "ইউটিউব সাবস্ক্রাইবার প্যাকেজ নিয়েছিলাম। কোনো প্রকার ড্রপ হয়নি, লাইফটাইম গ্যারান্টি আসলেই সত্যি।",
+      "rating": 5,
+      "visible": true,
+      "createdAt": "2026-09-21T20:00:41.283Z"
+    },
+    {
+      "id": "rev_3",
+      "customerName": "মেহেদী হাসান (E-com Owner)",
+      "reviewText": "ফেসবুক অ্যাডস ক্যাম্পেইন চালু করেছিলাম। আলহামদুলিল্লাহ প্রচুর সেল এসেছে। কাস্টমার সাপোর্ট দারুণ!",
+      "rating": 5,
+      "visible": true,
+      "createdAt": "2026-09-19T20:00:41.283Z"
+    },
+    {
+      "id": "rev_4",
+      "customerName": "রাফিদ মাহমুদ",
+      "reviewText": "ওয়েবসাইট বিল্ডিং সার্ভিস অনেক প্রফেশনাল ছিল। মাত্র ৫০০ টাকায় সুন্দর শপ ওয়েবসাইট বানিয়ে দিয়েছে।",
+      "rating": 5,
+      "visible": true,
+      "createdAt": "2026-09-17T20:00:41.283Z"
+    }
+  ],
+  "settings": {
+    "siteName": "BOOSTARA",
+    "whatsapp": "01813078583",
+    "bkash": "01644633815",
+    "nagad": "01644633815",
+    "rocket": "01644633815",
+    "adsMinimumBudget": 145,
+    "adsServiceFee": 40,
+    "smmServiceFee": 0,
+    "usdConversionRate": 145,
+    "deliveryMessages": {
+      "smm": "⏱️ অর্ডার কনফার্ম হওয়ার পর ১ থেকে ৪ ঘণ্টার মধ্যে সম্পন্ন হবে।",
+      "ads": "⏱️ ক্যাম্পেইন কনফার্ম হওয়ার পর ১ থেকে ২৪ ঘণ্টার মধ্যে শুরু হবে।",
+      "website": "⏱️ ১ থেকে ১০ ঘণ্টার মধ্যে সম্পন্ন হবে।"
+    },
+    "adminNotificationEmail": "mdmohammad.644633815@gmail.com",
+    "smtpConfig": {
+      "host": "smtp.gmail.com",
+      "port": 465,
+      "secure": true,
+      "user": "mdmohammad.644633815@gmail.com",
+      "pass": "jzkjlruoxcmtmecl",
+      "from": "BOOSTARA Orders <mdmohammad.644633815@gmail.com>"
+    },
+    "maintenanceMode": {
+      "enabled": false,
+      "message": "আমরা বর্তমানে কিছু গুরুত্বপূর্ণ আপডেট করছি। খুব শীঘ্রই BOOSTARA আবার সম্পূর্ণভাবে চালু হবে।",
+      "estimatedReturn": ""
+    },
+    "smmBoostWebsites": [
+      {
+        "id": "smm-boost-1",
+        "name": "SMM Boost Website 1",
+        "description": "প্রিমিয়াম হাই-স্পিড ফলোয়ার, লাইক ও ইনস্ট্যান্ট সার্ভার সার্ভিস।",
+        "url": "https://example.com/smm-boost-1",
+        "badge": "Ultra Fast"
+      },
+      {
+        "id": "smm-boost-2",
+        "name": "SMM Boost Website 2",
+        "description": "হাই রিটেনশন ভিউজ, সাবস্ক্রাইবার ও ড্রপ-ফ্রি সোশ্যাল গ্রোথ।",
+        "url": "https://example.com/smm-boost-2",
+        "badge": "Non-Drop"
+      },
+      {
+        "id": "smm-boost-3",
+        "name": "SMM Boost Website 3",
+        "description": "অটোমেটেড অর্গানিক বুস্টিং ও ২৪/৭ ডেডিকেটেড সাপোর্ট সিস্টেম।",
+        "url": "https://example.com/smm-boost-3",
+        "badge": "Auto API"
+      }
+    ],
+    "announcementBar": {
+      "enabled": false,
+      "text": "🔥 বিশেষ অফার: বিকাশ বা নগদে অর্ডারে ১ ঘণ্টায় সুপার ফাস্ট ডেলিভারি! | যেকোনো সহায়তায় লাইভ হোয়াটসঅ্যাপ সাপোর্ট।",
+      "linkText": "অর্ডার ট্র্যাক করুন →",
+      "linkUrl": "/track-order",
+      "badge": "LIMITED OFFER"
+    },
+    "dollarCategory": {
+      "enabled": true,
+      "dollarRate": 145,
+      "rateNote": "সর্বশেষ লাইভ রেট আপডেট",
+      "virtualCard": {
+        "serviceName": "International Virtual Visa Card Setup Service",
+        "currentPrice": 1000,
+        "previousPrice": 1600,
+        "description": "ফেসবুক ও ইনস্টাগ্রাম অ্যাডস বুস্টিং, গুগল অ্যাডস, ক্যানভা প্রো, চ্যাটজিপিটি প্লাস ও যেকোনো আন্তর্জাতিক অনলাইন পেমেন্টের জন্য ইনস্ট্যান্ট অ্যাক্টিভেশন ডুয়েল কারেন্সি ভার্চুয়াল ভিসা কার্ড।",
+        "whatsapp": "01813078583",
+        "deliveryTime": "১০-৩০ মিনিট"
+      }
+    }
+  },
+  "websitePackages": [
+    {
+      "id": "pkg_built_for_you",
+      "name": "আমরা বানিয়ে দেব",
+      "totalPrice": 500,
+      "advanceAmount": 250,
+      "remainingAmount": 250,
+      "description": "আপনার জন্য professional website তৈরি করে দেব।",
+      "deliveryTime": "১ থেকে ১০ ঘণ্টা",
+      "sortOrder": 1,
+      "active": true,
+      "packageType": "custom_build",
+      "features": [
+        "রেসপনসিভ ও আধুনিক ডিজাইন",
+        "ডেলিভারি পর যেকোনো কারেকশন সুবিধা"
+      ],
+      "createdAt": "2026-09-29T14:35:42.500Z",
+      "updatedAt": "2026-09-29T14:35:42.500Z"
+    },
+    {
+      "id": "pkg_learn_yourself",
+      "name": "নিজে শিখুন",
+      "totalPrice": 1000,
+      "advanceAmount": 500,
+      "remainingAmount": 500,
+      "description": "Recorded video tutorial দিয়ে website তৈরি শেখানো হবে।",
+      "deliveryTime": "ভিডিও delivery after payment",
+      "sortOrder": 2,
+      "active": true,
+      "packageType": "course",
+      "features": [
+        "সহজ বাংলায় বিস্তারিত গাইডলাইন",
+        "লাইফটাইম এক্সেস ও সাপোর্ট"
+      ],
+      "createdAt": "2026-09-29T14:35:42.500Z",
+      "updatedAt": "2026-09-29T14:35:42.500Z"
+    }
+  ]
+}

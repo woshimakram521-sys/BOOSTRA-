@@ -1,0 +1,17 @@
+{
+  "name": "BOOSTARA — Social Media Growth & Digital Services",
+  "short_name": "BOOSTARA",
+  "description": "BOOSTARA provides affordable Facebook, Instagram, TikTok and YouTube growth services, Ads Boost and professional website services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030817",
+  "theme_color": "#030817",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050b1c" />
+      <stop offset="100%" stop-color="#030817" />
+    </linearGradient>
+    <linearGradient id="boostGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b3dff" />
+      <stop offset="100%" stop-color="#1ac8ff" />
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="110" fill="url(#bgGrad)" stroke="#132345" stroke-width="8" />
+  <path d="M148 116 C148 102, 160 92, 174 92 L280 92 C342 92, 386 122, 386 178 C386 218, 358 244, 318 254 C368 266, 396 298, 396 344 C396 406, 346 440, 276 440 L174 440 C160 440, 148 428, 148 414 Z" fill="url(#boostGrad)" />
+  <path d="M228 156 L268 156 C296 156, 314 168, 314 192 C314 216, 296 228, 268 228 L228 228 Z" fill="#040919" />
+  <path d="M228 296 L278 296 C308 296, 328 310, 328 338 C328 366, 308 380, 278 380 L228 380 Z" fill="#040919" />
+  <polygon points="268,140 236,252 284,252 248,372 320,240 272,240" fill="#ffffff" />
+</svg>

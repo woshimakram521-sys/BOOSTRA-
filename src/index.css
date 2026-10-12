@@ -1,0 +1,352 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #060b17;
+    --bg-surface: #0f182d;
+    --bg-surface-elevated: #15223e;
+    --bg-surface-sunken: #080d1a;
+    --text-main: #eef4ff;
+    --text-muted: #94a3b8;
+    --border-clay: rgba(255, 255, 255, 0.07);
+    --border-clay-subtle: rgba(255, 255, 255, 0.04);
+    --brand-violet: #8b3dff;
+    --brand-cyan: #1ac8ff;
+    --grad-primary: linear-gradient(135deg, #8b3dff 0%, #1ac8ff 100%);
+  }
+
+  body {
+    background-color: #060b17;
+    background-image: 
+      radial-gradient(circle at 15% 10%, rgba(139, 61, 255, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 85% 25%, rgba(26, 200, 255, 0.07) 0%, transparent 45%),
+      radial-gradient(circle at 50% 85%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+    color: #eef4ff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+  }
+}
+
+/* ==========================================================================
+   PREMIUM DARK CLAYMORPHISM DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. Base Clay Card (Tactile 3D Soft Surface) */
+.clay-card,
+.glass-card {
+  background: linear-gradient(145deg, #131d36 0%, #0c1427 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.08),
+    inset -3px -4px 8px rgba(0, 0, 0, 0.65),
+    0 14px 30px -6px rgba(0, 0, 0, 0.65),
+    0 4px 10px -2px rgba(0, 0, 0, 0.4);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.clay-card:hover,
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    inset 2.5px 2.5px 5px rgba(255, 255, 255, 0.12),
+    inset -3px -4px 8px rgba(0, 0, 0, 0.55),
+    0 20px 38px -8px rgba(0, 0, 0, 0.75),
+    0 6px 16px -3px rgba(139, 61, 255, 0.22);
+  border-color: rgba(139, 61, 255, 0.25);
+}
+
+/* 2. Elevated Clay Card (For prominent focus, hero units, and active tiers) */
+.clay-card-elevated {
+  background: linear-gradient(145deg, #182544 0%, #0e172c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 1.75rem;
+  box-shadow: 
+    inset 2.5px 2.5px 5px rgba(255, 255, 255, 0.12),
+    inset -4px -5px 10px rgba(0, 0, 0, 0.7),
+    0 22px 45px -8px rgba(0, 0, 0, 0.75),
+    0 8px 18px -4px rgba(0, 0, 0, 0.5);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-card-elevated:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    inset 3px 3px 6px rgba(255, 255, 255, 0.15),
+    inset -4px -5px 10px rgba(0, 0, 0, 0.6),
+    0 28px 50px -10px rgba(0, 0, 0, 0.85),
+    0 10px 22px -4px rgba(26, 200, 255, 0.25);
+  border-color: rgba(26, 200, 255, 0.35);
+}
+
+/* 3. Clay Panels & Containers */
+.clay-panel,
+.glass-panel {
+  background: linear-gradient(145deg, rgba(16, 25, 48, 0.92) 0%, rgba(10, 16, 32, 0.96) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: 
+    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.08),
+    inset -2px -3px 6px rgba(0, 0, 0, 0.6),
+    0 12px 32px -4px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* 4. Sunken Clay Inset / Well (For form wells, counter backgrounds, and recessed containers) */
+.clay-well,
+.clay-inset {
+  background: #080d19;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 1.25rem;
+  box-shadow: 
+    inset 3px 4px 7px rgba(0, 0, 0, 0.8),
+    inset -1.5px -1.5px 3px rgba(255, 255, 255, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* 5. Clay Input Fields */
+.clay-input,
+.boostara-input {
+  background-color: #080d1a !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: #eef4ff !important;
+  border-radius: 1rem !important;
+  box-shadow: 
+    inset 2.5px 3.5px 6px rgba(0, 0, 0, 0.75),
+    inset -1.5px -1.5px 3px rgba(255, 255, 255, 0.04),
+    0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.22s ease !important;
+}
+
+.clay-input::placeholder,
+.boostara-input::placeholder {
+  color: #64748b !important;
+}
+
+.clay-input:focus,
+.boostara-input:focus {
+  outline: none !important;
+  border-color: #8b3dff !important;
+  box-shadow: 
+    inset 2px 3px 5px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(139, 61, 255, 0.5),
+    0 0 20px rgba(139, 61, 255, 0.25) !important;
+}
+
+/* 6. Extruded Primary Clay Button */
+.clay-btn-primary,
+.btn-primary {
+  background: linear-gradient(135deg, #8b3dff 0%, #6929d6 50%, #1ac8ff 100%) !important;
+  color: #ffffff !important;
+  border-radius: 1.125rem !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 
+    inset 1.5px 2px 3px rgba(255, 255, 255, 0.42),
+    inset -2px -3px 6px rgba(0, 0, 0, 0.38),
+    0 10px 24px -4px rgba(139, 61, 255, 0.5),
+    0 4px 10px -2px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clay-btn-primary:hover,
+.btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 
+    inset 2px 2.5px 4px rgba(255, 255, 255, 0.5),
+    inset -2px -3px 6px rgba(0, 0, 0, 0.35),
+    0 14px 30px -4px rgba(139, 61, 255, 0.65),
+    0 6px 14px -2px rgba(26, 200, 255, 0.4) !important;
+}
+
+.clay-btn-primary:active,
+.btn-primary:active {
+  transform: translateY(1px) !important;
+  box-shadow: 
+    inset 3px 3px 7px rgba(0, 0, 0, 0.5),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.2),
+    0 3px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 7. Extruded Secondary Clay Button */
+.clay-btn-secondary,
+.btn-secondary {
+  background: linear-gradient(145deg, #15223e 0%, #0d1527 100%) !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 1.125rem !important;
+  font-weight: 600 !important;
+  box-shadow: 
+    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.1),
+    inset -2px -3px 6px rgba(0, 0, 0, 0.6),
+    0 8px 18px -3px rgba(0, 0, 0, 0.55) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clay-btn-secondary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px) !important;
+  background: linear-gradient(145deg, #1a2a4d 0%, #101930 100%) !important;
+  color: #ffffff !important;
+  border-color: rgba(26, 200, 255, 0.3) !important;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.14),
+    inset -2px -3px 6px rgba(0, 0, 0, 0.55),
+    0 12px 24px -4px rgba(0, 0, 0, 0.65),
+    0 4px 12px -2px rgba(26, 200, 255, 0.2) !important;
+}
+
+.clay-btn-secondary:active,
+.btn-secondary:active {
+  transform: translateY(1px) !important;
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.65),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.05),
+    0 2px 6px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 8. Clay Emerald Button (WhatsApp, Success, Payment Confirmations) */
+.clay-btn-emerald {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 1.125rem !important;
+  font-weight: 700 !important;
+  box-shadow: 
+    inset 1.5px 2px 3px rgba(255, 255, 255, 0.45),
+    inset -2px -3px 5px rgba(0, 0, 0, 0.35),
+    0 10px 22px -4px rgba(16, 185, 129, 0.5) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+}
+
+.clay-btn-emerald:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 
+    inset 2px 2.5px 4px rgba(255, 255, 255, 0.55),
+    inset -2px -3px 5px rgba(0, 0, 0, 0.3),
+    0 14px 28px -4px rgba(16, 185, 129, 0.65) !important;
+}
+
+.clay-btn-emerald:active {
+  transform: translateY(1px) !important;
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.2),
+    0 3px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 9. Clay Badge & Pill (Tactile 3D Micro-Label) */
+.clay-badge {
+  background: linear-gradient(145deg, #162442 0%, #0d1527 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  box-shadow: 
+    inset 1px 1px 2px rgba(255, 255, 255, 0.12),
+    inset -1.5px -2px 4px rgba(0, 0, 0, 0.55),
+    0 4px 10px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* 10. Interactive Clay Tabs & Option Pills */
+.clay-tab-active {
+  background: linear-gradient(145deg, #1f2f56 0%, #111b33 100%);
+  border: 1px solid rgba(139, 61, 255, 0.45);
+  border-radius: 1rem;
+  color: #ffffff;
+  box-shadow: 
+    inset 1.5px 2px 3px rgba(255, 255, 255, 0.18),
+    inset -2px -3px 5px rgba(0, 0, 0, 0.6),
+    0 6px 16px -2px rgba(139, 61, 255, 0.3);
+}
+
+.clay-tab-inactive {
+  background: #090e1a;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+  color: #94a3b8;
+  box-shadow: 
+    inset 2px 2px 4px rgba(0, 0, 0, 0.6),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+}
+
+.clay-tab-inactive:hover {
+  background: #0d162b;
+  color: #e2e8f0;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* 11. Hero Background (Refined dark clay ambiance) */
+.hero-radial-bg {
+  background: radial-gradient(
+    circle at 75% 35%,
+    #13244a 0%,
+    #091024 45%,
+    #060b17 80%
+  );
+}
+
+/* 12. Gradient Text */
+.text-gradient {
+  background: linear-gradient(90deg, #8b3dff 0%, #1ac8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-clay {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 13. WhatsApp Floating Button Clay Orb */
+.whatsapp-clay-orb {
+  background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -3px -4px 7px rgba(0, 0, 0, 0.4),
+    0 12px 28px -4px rgba(34, 197, 94, 0.5),
+    0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.whatsapp-clay-orb:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 
+    inset 2.5px 2.5px 5px rgba(255, 255, 255, 0.6),
+    inset -3px -4px 7px rgba(0, 0, 0, 0.35),
+    0 16px 36px -4px rgba(34, 197, 94, 0.65),
+    0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-pulse {
+  animation: pulse-glow 2.5s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 
+      inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+      inset -3px -4px 7px rgba(0, 0, 0, 0.4),
+      0 0 0 0 rgba(34, 197, 94, 0.6);
+  }
+  50% {
+    box-shadow: 
+      inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+      inset -3px -4px 7px rgba(0, 0, 0, 0.4),
+      0 0 0 14px rgba(34, 197, 94, 0);
+  }
+}
+
