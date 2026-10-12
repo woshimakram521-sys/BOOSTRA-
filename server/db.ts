@@ -22,12 +22,17 @@ interface DatabaseSchema {
   settings: AppSettings;
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+const isVercel = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = isVercel ? '/tmp/data' : path.resolve(process.cwd(), 'data');
 const DB_FILE = path.join(DATA_DIR, 'boostara-db.json');
 
 function ensureDataDir() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+  } catch (err) {
+    console.error('Error creating data directory:', err);
   }
 }
 
@@ -399,7 +404,10 @@ class Database {
           this.data.admins = init.admins;
           this.persist();
         }
-        if (!this.data.smmServices) this.data.smmServices = [];
+        if (!this.data.smmServices || this.data.smmServices.length === 0) {
+          this.data.smmServices = getInitialData().smmServices;
+          this.persist();
+        }
         if (!this.data.websitePackages || this.data.websitePackages.length === 0) {
           this.data.websitePackages = getInitialData().websitePackages;
           this.persist();
